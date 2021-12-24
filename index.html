@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <header>
+        <a href="./highscores.html">High Scores</a>
+        <p>Time: <span id="time"></span></p>
+    </header>
+    <div id="startbox">
+        <h1>Welcome To the Comic Book Quiz</h1>
+        <p>We will test your comic book knowledge</p>
+        <button id="startbutton">Start</button>
+    </div>
+    <div id="questionbox" class="hide">
+        <h2 id="questiondescription"></h2>
+        <ul>
+            <li>
+                <input type="radio" name="choices" id="a" class="choices">
+                <label for="a" id=" a_text">Answer</label>
+            </li>
+
+            <li>
+                <input type="radio" name="choices" id="b" class="choices">
+                <label for="b" id=" b_text">Answer</label>
+            </li>
+
+            <li>
+                <input type="radio" name="choices" id="c" class="choices">
+                <label for="c" id="c_text">Answer</label>
+            </li>
+
+
+            <li>
+                <input type="radio" name="choices" id="d" class="choices">
+                <label for="d" id="d_text">Answer</label>
+            </li>
+        </ul>
+        <div id="choices"></div>
+    </div>
+    <div id="endbox" class="hide">
+        <h3>Quiz Complete</h3>
+        <p>Final Score: <span id="score"></span></p>
+        <p>Initials: </p>
+        <input type="text" id="Initials">
+        <button id="submit">Submit</button>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
